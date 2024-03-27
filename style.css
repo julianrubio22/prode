@@ -2,6 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: lightslategrey;
 }
 
 header{
@@ -14,7 +15,7 @@ header{
 header img {
     margin: 15px 0 20px 140px;
     height: 175px;
-    margin-right: 20px;
+    margin-right: 300px;
 }
 
 nav ul{
@@ -54,4 +55,67 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+/*TABLA HISTORICA*/
+
+/*.tabla {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px; 
+}
+
+.tabla div {
+    background: black;
+    color: white;
+    text-align: center;
+    margin-top: 2px;
+}*/
+
+.containertabla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 700px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.titulotabla {
+    background: rgb(2, 2, 71);
+    grid-column: 1 / 4;
+    text-align: center;
+    color: white;
+}
+
+.titulotabla div{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(53, 93, 167);
+}
+
+.tablapuntos {
+    background: rgb(0, 0, 102);
+    color: white;
+}
+
+.tablapuntos p {
+    margin-left: 100px;
+}
+
+.equipos {
+    background: rgb(0, 0, 102);
+    color: white;
+}
+
+
+.puntos {
+    text-align: end;
+    background: rgb(0, 0, 102);
+    color: white;
+}
+
+.puntos p {
+    margin-right: 110px;
 }
