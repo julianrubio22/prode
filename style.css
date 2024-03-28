@@ -2,7 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: lightslategrey;
+    background-color: rgb(42, 44, 46);
 }
 
 header{
@@ -13,8 +13,8 @@ header{
 }
 
 header img {
-    margin: 15px 0 20px 140px;
-    height: 175px;
+    margin: 10px 0 20px 140px;
+    height: 80px;
     margin-right: 300px;
 }
 
@@ -39,7 +39,7 @@ nav ul li a:hover {
     background-color: rgb(192, 184, 73);
 }
 
-.escudos{
+.containerescudos {
     display: grid;
     grid-template-columns: repeat(
         auto-fit,
@@ -51,10 +51,15 @@ nav ul li a:hover {
     margin-top: 30px;
 }
 
-.escudos img {
+.escudos {
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+.escudos img {
+    width: 200px;
+    height: 200px;
 }
 
 /*TABLA HISTORICA*/
@@ -83,21 +88,21 @@ nav ul li a:hover {
 }
 
 .titulotabla {
-    background: rgb(2, 2, 71);
+    background: rgb(101, 108, 122);
     grid-column: 1 / 4;
     text-align: center;
-    color: white;
+    color: ;
 }
 
 .titulotabla div{
     display: flex;
     justify-content: space-around;
-    background: rgb(53, 93, 167);
+    background:
+    rgb(178, 178, 184);
 }
 
 .tablapuntos {
-    background: rgb(0, 0, 102);
-    color: white;
+    background: rgb(101, 108, 122);
 }
 
 .tablapuntos p {
@@ -105,17 +110,18 @@ nav ul li a:hover {
 }
 
 .equipos {
-    background: rgb(0, 0, 102);
-    color: white;
+    background: rgb(101, 108, 122);
 }
-
 
 .puntos {
     text-align: end;
-    background: rgb(0, 0, 102);
-    color: white;
+    background: rgb(101, 108, 122);
 }
 
 .puntos p {
     margin-right: 110px;
+}
+
+.prueba {
+    color: white;
 }
