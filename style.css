@@ -119,26 +119,24 @@ nav ul li a:hover {
     color: white;
 }
 
-.containerequipos div{
-    display: flex;
+.containerequipos div {
+    border-bottom: 1px solid grey
 }
 
 .containerequipos h1 {
-    width: 380px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    margin: 60px 0 20px 180px;
+    text-align: start;
+    margin: 50px 0 30px 0;
 }
 
-.containerequipos p {
-    flex-direction: row;
+.containerequipos p{
+    margin-right: 400px;
+    margin-top: 50px;
 }
 
 .containerequipos img {
     width: 300px;
     height: 300px;
-    margin: 20px 80px;
+    margin: 30px 120px;
 }
 
 /*FOOTER*/
