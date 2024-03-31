@@ -9,13 +9,16 @@ header{
     background: black;
     color: white;
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
+
+header div {
+    display: flex;
+    max-width: 1200px;
 }
 
 header img {
-    margin: 10px 0 20px 140px;
     height: 80px;
-    margin-right: 300px;
 }
 
 nav ul{
@@ -24,6 +27,7 @@ nav ul{
 }
 
 nav ul li{
+    display: flex;
     margin-right: 40px;
 }
 
@@ -65,11 +69,11 @@ nav ul li a:hover {
 /*TABLA HISTORICA*/
 
 
-
 .containertabla {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 700px;
+    max-width: 1200px;
     margin: auto;
     margin-top: 25px;
     margin-bottom: 20px;
@@ -121,19 +125,16 @@ nav ul li a:hover {
 }
 
 .containerequipos div {
-    border-bottom: 0.5px solid grey
+    max-width: 1200px;
+    margin: auto;
 }
 
 .containerequipos h1 {
-    text-align: start;
     margin: 50px 0 30px 0;
     font-size: 30px;
 }
 
-.containerequipos p{
-    margin-right: 400px;
-    margin-top: 50px;
-}
+
 
 .containerequipos img {
     width: 300px;
@@ -184,6 +185,9 @@ nav ul li a:hover {
     grid-column: 1 / 3;
     color: white;
     text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 15px;
 }
 
 .containerfooter p {
