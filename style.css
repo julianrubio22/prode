@@ -137,40 +137,30 @@ nav ul li a:hover {
 
 
 .containerequipos img {
-    width: 300px;
-    height: 300px;
-    margin: 30px 120px;
+    width: 200px;
+    margin: 30px 100px;
 }
 /*HISTORIA*/
 
-.imghistoria{
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.imghistoria img {
-    width: 200px;
-    margin: auto; 
-}
-
-#panel, #flip {
-    width: 600px;
-    padding: 5px;
-    text-align: center;
-    background-color: #e5eecc;
-    border: solid 1px #c3c3c3;
+.faq{
+    max-width: 800px;
     margin: auto;
-    font-size: 25px;
-    border-bottom: 1px solid grey;
+}
+
+.faq h1 {
+    position: relative;
+    background: yellow;
     border: 1px solid;
     border-radius: 15px;
+    padding: 10px;
     cursor: pointer;
 }
 
-#panel {
-    display: none;
-    font-size: 20px;
+.faq p {
+    background: yellow;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 /*FOOTER*/
@@ -190,11 +180,11 @@ nav ul li a:hover {
     margin-top: 15px;
 }
 
-.containerfooter p {
+.containerfooter .redes {
     margin: 30px 15px 20px 250px;
 }
 
-.containerfooter p a {
+.containerfooter .redes a {
     border: 1px solid white;
     padding: 5px 15px;
     font-size: 16px;
@@ -203,7 +193,7 @@ nav ul li a:hover {
     color: white;
 }
 
-.containerfooter p a img {
+.containerfooter .redes a img {
     height: 100%;
 }
 
@@ -219,4 +209,8 @@ nav ul li a:hover {
 .iconos {
     width: 15px;
     margin-right: 10px;
+}
+
+@media (max-width:650px){
+    
 }
