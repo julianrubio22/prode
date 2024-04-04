@@ -11,10 +11,15 @@ $(document).ready(function(){
     });
     console.log("has clickeado")
 });*/
-$("h1").on('click', function() {
+$("div.faq h1").on('click', function() {
     $(this).next("p").slideToggle('slow');
+    $(this).find('.toggle-icon').text(function(_, text) {
+      return text === '-' ? '+' : '-';
+    });
   });
   
+  $("div.faq p").hide();
+
   $(document).ready(function() {
     $("div").children("p").hide();
   })
