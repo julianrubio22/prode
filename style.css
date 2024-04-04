@@ -149,7 +149,7 @@ nav ul li a:hover {
     margin: auto;
 }
 
-.faq h1 {
+.faq h3 {
     position: relative;
     background: yellow;
     border: 1px solid;
@@ -183,7 +183,10 @@ footer h2{
 
 .footer_sponsors{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(200px, 1fr)
+    );
     background-color: black;
 }
 .sponsor_lista{
@@ -255,3 +258,89 @@ footer h2{
     margin-right: 10px;
 }
 
+@media (max-width: 550px){
+    header {
+        flex-direction: column;
+    }
+
+    header div {
+        display: block;
+    }
+
+    header img {
+        margin: 5px 170px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .escudos {
+        text-align: center;
+    }
+    .containerescudos {
+        display: grid;
+        grid-template-columns: repeat(
+        auto-fit,
+        minmax(300px, 1fr));
+    }
+/*footer*/
+    .footer_sponsors{
+        padding: 0;
+    }
+
+    .containerfooter{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .containerfooter .redes {
+        display: block;
+        text-align: center;
+        margin: 20px 10px;
+    }
+
+    /*mobile torneos*/
+
+    .containertabla {
+        max-width: 350px;
+    }
+
+    .tablapuntos p {
+        margin-left: 50px;
+    }
+
+    .puntos p {
+        margin-right: 50px;
+    }
+
+    /*equipos*/
+    .containerequipos div {
+        flex-direction: column;
+        margin: 10px 10px;
+    }
+
+    .containerequipos img {
+        width: 200px;
+        display: flex;
+        margin: auto;
+    }
+
+    .containerequipos h1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    /*acordeon*/
+    .faq {
+        max-width: 300px;
+        margin: auto;
+    }
+}

@@ -11,7 +11,7 @@ $(document).ready(function(){
     });
     console.log("has clickeado")
 });*/
-$("div.faq h1").on('click', function() {
+$("div.faq h3").on('click', function() {
     $(this).next("p").slideToggle('slow');
     $(this).find('.toggle-icon').text(function(_, text) {
       return text === '-' ? '+' : '-';
