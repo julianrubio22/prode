@@ -19,7 +19,3 @@ $("div.faq h3").on('click', function() {
   });
   
   $("div.faq p").hide();
-
-  $(document).ready(function() {
-    $("div").children("p").hide();
-  })
